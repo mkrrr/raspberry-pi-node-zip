@@ -4,7 +4,8 @@ LABEL Description="Docker image for raspberry pi including node & zip"
 
 # General dependencies
 RUN apt-get update && apt-get install -y \
-  zip 
+  zip \
+  sshpass
 
 # Cleanup
 RUN apt-get clean && \
